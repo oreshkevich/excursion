@@ -1,0 +1,181 @@
+.excursion {
+  margin-top: 67px;
+}
+.excursion__container {
+  max-width: 1070px;
+}
+.excursion__wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 54px;
+  border: 0.5px solid #8e8e8e;
+  border-radius: 15px;
+}
+.excursion__picture {
+  position: relative;
+  max-width: 473px;
+  flex-shrink: 0;
+}
+.excursion__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px 0px 0px 16px;
+}
+.excursion__box {
+  margin-left: 23px;
+}
+.excursion__title {
+  // max-width: 557px;
+  margin-top: 16px;
+  font-weight: 400;
+  font-size: rem(26);
+  line-height: rem(34);
+  color: #000000;
+}
+.excursion__time {
+  margin-top: 13px;
+  margin-bottom: 12px;
+  padding-left: 22px;
+  position: relative;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #9e9e9e;
+}
+
+.col {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.col__list {
+  padding-left: 15px;
+}
+.col__list li {
+  position: relative;
+  margin-bottom: 16px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  color: #343434;
+}
+.col__list li:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: -32px;
+  top: 3px;
+  width: 16px;
+  height: 16px;
+  background: url('../assets/svg/check-mark.svg') center center/cover no-repeat;
+}
+.excursion__time:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0px;
+  top: 2px;
+  width: 16px;
+  height: 16px;
+  background: url('../assets/svg/clock-circular.svg') center center/cover
+    no-repeat;
+}
+
+.col__span {
+  margin-left: 7px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #343434;
+  background: #c5dcff;
+  padding: 4px 15px;
+  border-radius: 11px;
+}
+
+.col__span_time {
+  background: #6ba6ff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.excursion__prise {
+  display: flex;
+}
+
+.button {
+  margin-bottom: 5px;
+  padding: 16px 47px 16px 40px;
+  text-align: center;
+  background: #ffd83c;
+  border-radius: 23px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  color: #292929;
+}
+
+.excursion__prise {
+}
+.prise {
+  padding-top: 13px;
+  padding-bottom: 20px;
+}
+.prise__wrap {
+  padding-right: 17px;
+}
+.prise__item {
+  padding-top: 5px;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 20px;
+  color: #000000;
+  padding-bottom: 9px;
+}
+.prise__rub {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.excursion__picture::before {
+  position: absolute;
+  padding: 12px 37px;
+  margin: 0;
+  left: 0px;
+  top: 45px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background: #099ce8;
+  border-radius: 0px;
+}
+.excursion__picture_new::before {
+  content: 'НОВИНКА';
+}
+.excursion__picture_city::before {
+  content: 'КРУГЛЫЙ ГОД';
+  background: #ffd83b;
+  color: #323232;
+  padding: 12px 33px;
+  top: 63px;
+}
+
+.excursion__wrap_margin {
+  margin-top: 65px;
+}
+
+.excursion__wrap_none::before {
+  display: none;
+}
+.col__text-li {
+  display: flex;
+}
+.col__text {
+  margin-top: 5px;
+}

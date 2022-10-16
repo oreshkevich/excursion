@@ -1,0 +1,34 @@
+@function vw($value, $base: 1920) {
+  @return calc($value / $base) * 100vw;
+}
+
+@function vh($value, $base: 1080) {
+  @return calc($value / $base) * 100vh;
+}
+
+// @mixin mobile {
+//   @media (max-width: 576px) {
+//     @content;
+//   }
+// }
+$baseFontSize: 16;
+@function rem($pixels, $context: $baseFontSize) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+
+  @if (unitless($context)) {
+    $context: $context * 1px;
+  }
+
+  @return calc($pixels / $context) * 1rem;
+}
+
+h1 {
+  font-size: vw(97);
+  font-size: vh(100);
+
+  // @include mobile {
+  //   font-size: 30px;
+  // }
+}

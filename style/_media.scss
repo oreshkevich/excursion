@@ -1,0 +1,136 @@
+@media (max-width: 1120px) {
+  .container {
+    max-width: 950px;
+  }
+  // .col__text-li {
+  //   flex-direction: column;
+  // }
+  .excursion__picture {
+    flex-shrink: 1;
+  }
+}
+@media (max-width: 822px) {
+  .container {
+    max-width: 750px;
+  }
+  .col__text-li {
+    flex-direction: column;
+  }
+}
+@media (max-width: 670px) {
+  .container {
+    max-width: 550px;
+  }
+  .excursion__wrap {
+    flex-direction: column;
+  }
+  .excursion__picture {
+    position: relative;
+    max-width: 670px;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+  }
+  .excursion__image {
+    border-radius: 16px 16px 0px 0px;
+  }
+}
+@media (max-width: 500px) {
+  .container {
+    max-width: 450px;
+  }
+  .excursion__wrap {
+    flex-direction: column;
+  }
+  .excursion__image {
+    max-height: 220px;
+  }
+  .excursion__picture::before {
+    font-size: 12px;
+    color: #3e3e3e;
+    background: #fed74b;
+    padding: 7px 18px;
+    top: 40px;
+  }
+  .excursion__box {
+    display: flex;
+    flex-direction: column;
+  }
+  .excursion__time {
+    order: 1;
+  }
+  .excursion__title {
+    margin-top: 0px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    color: #404040;
+    order: 2;
+  }
+  .excursion__box {
+    margin-left: 11px;
+  }
+  .col {
+    margin-top: 18px;
+    order: 3;
+  }
+  .excursion__prise {
+    order: 4;
+  }
+  .col__list li {
+    font-size: 14px;
+    color: #4b4b4b;
+  }
+  .col__span {
+    font-size: 14px;
+  }
+  .prise__item {
+    font-size: 30px;
+    padding-bottom: 2px;
+  }
+  .prise__rub {
+    font-size: 10px;
+  }
+  .button {
+    margin-left: 31px;
+    font-size: 14px;
+    color: #404040;
+    padding: 11px 47px 12px 42px;
+  }
+  .col__list {
+    padding-left: 21px;
+  }
+  .col__list li {
+    line-height: 18px;
+  }
+  .col__text {
+    margin-top: 19px;
+  }
+  .col__span {
+    margin-left: 3px;
+    padding: 2px 13px;
+  }
+  .prise {
+    padding-top: 16px;
+    padding-left: 6px;
+  }
+  .excursion__picture_city::before {
+    content: 'НОВИНКА';
+    background: #7553ff;
+    border-radius: 15px 0px 12px;
+    top: 0px;
+    color: #ffffff;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 355px) {
+  .prise {
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .col__text {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
