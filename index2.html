@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styels.min.css">
+  <title>test</title>
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <main>
+      <section class="table">
+        <div class="container">
+          <div class="table__wrap">
+            <h2>Расчет стоимости билетов</h2>
+            <label>Выберите направление:
+              <select id="direction">
+                <option value="1">A &rarr; B</option>
+                <option value="2">B &rarr; A</option>
+                <option value="3">A &rarr; B &rarr; A</option>
+              </select>
+            </label>
+            <div class="table__panel" id="blockAB">
+              <label>A &rarr; B
+                <select id="timesAB"></select>
+              </label>
+            </div>
+            <div class="table__panel" id="blockBA">
+              <label> B &rarr; A
+                <select id="timesBA"></select>
+              </label>
+            </div>
+            <div class="table__wrap">
+              <label for="num">Количество билетов</label>
+              <input id="num" type="number" min="0" max="100">
+            </div>
+            <button id="button" class="button">Посчитать</button>
+            <div class="table__panel" id="output"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>
